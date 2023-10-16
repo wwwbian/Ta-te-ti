@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tateti</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar" style="background-color: #66b41c;">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="img/TA (1).png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+            tateti suerte para ti ʕ•́ᴥ•̀ʔっ♡
+            <button class="btn btn-light" id="AbrirVentana">Comenzar</button>
+        </a>
+        </div>
+    </nav>
+    
+    <div id="VentanaEmergente" class="VentanaEmergente oculta">
+        <div class="ContenidoVentana">
+            <h2>Que comience el juego :D</h2>
+            <label >Nombre del primer Jugador:</label>
+            <input type="text" id="nombreJugador1">
+            <label >Elige tu símbolo:</label>
+            <select id="simbolo">
+                <option value="X">X</option>
+                <option value="O">O</option>
+            </select>
+            <label >Nombre del segundo Jugador:</label>
+            <input type="text" id="nombreJugador2">
+            <button id="CerrarVentana">Empezar el juego :)</button>
+        </div>
+    </div>
+    
+    <div id="infoDelJugador" class="info">
+        <p>Jugador actual: <span id="NombreJugadorActual"></span></p>
+        <p>Símbolo: <span id="SimboloJugadorActual"></span></p>
+    </div>
+    <div class="tablero">
+        <div class="casilla"></div>
+        <div class="casilla"></div>
+        <div class="casilla"></div>
+        <div class="casilla"></div>
+        <div class="casilla"></div>
+        <div class="casilla"></div>
+        <div class="casilla"></div>
+        <div class="casilla"></div>
+        <div class="casilla"></div>
+    </div>
+    <div id="resultado"></div>
+    <button id="Reiniciar" class="btn btn-light br">Reiniciar</button>
+    <footer class="footer"> 
+        © 2023 Esta pagina fue creada por Mayra Bianca y Thiago J
+    </footer>
+    <script src="scrip.js"></script>
+</body>
+</html>
